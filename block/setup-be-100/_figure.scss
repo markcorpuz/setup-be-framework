@@ -1,0 +1,21 @@
+/* SETUP-BE | 1.0.0 | 200409 | setup-be/block/setup-be-100/figure.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	figure {
+
+		&.border {
+			border: 1px solid #ccc;
+		}
+
+		&.border-with-padding {
+			border: 1px solid #ccc;
+			padding: 1rem;
+		}
+
+	}

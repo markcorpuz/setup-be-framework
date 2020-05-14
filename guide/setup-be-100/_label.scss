@@ -1,0 +1,101 @@
+/* SETUP-BE | 1.0.0 | 200413 | setup-be/guide/setup-be-100/label.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%guide-label {
+		font-size: 0.75rem; 	// .has-tiny-font-size
+		font-weight: 700;
+		padding: 5px 10px;
+		color: white;
+		background-color: #e5565d;
+		display: block;
+	}
+	%guide-label2 {
+		//font-size: 0.75rem; 	// .has-tiny-font-size
+		//font-weight: 700;
+		//padding: 5px 10px;
+		color: #999;
+		background-color: #f0f0f0;
+		//display: block;
+	}
+
+	%guide-label-tab {
+		display: inline-block;
+	}
+
+	%guide-label-sub {
+		background-color: #ef989d;
+	}
+
+	%guide-label-end {
+		float: right;
+		clear: both;
+	}
+
+	%guide-summary {
+		//font-size: 0.75rem; 	// .has-tiny-font-size
+		font-weight: 400;
+		//padding: 5px 10px;
+		color: #333;
+		background-color: #eee;
+		border-left: 5px solid #e5565d;
+		//display: block;
+	}
+
+	%guide-highlight {
+		border-left: 5px solid #e5565d;
+		padding-left: 10px;
+	}
+
+	%guide-highlight2 {
+		padding-left: 10px;
+		border-left: 5px solid #eee;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.guide-label {
+		@extend %guide-label !optional;
+	}
+	.guide-label2 {
+		@extend %guide-label !optional;
+		@extend %guide-label2 !optional;
+	}
+
+		.guide-label.tab {
+			@extend %guide-label !optional;
+			@extend %guide-label-tab !optional;
+		}
+
+		.guide-label.end {
+			@extend %guide-label !optional;
+			@extend %guide-label-end !optional;
+		}
+
+		.guide-label2.tab {
+			@extend %guide-label !optional;
+			@extend %guide-label2 !optional;
+			@extend %guide-label-tab !optional;
+		}
+
+		.guide-label2.end {
+			@extend %guide-label !optional;
+			@extend %guide-label2 !optional;
+			@extend %guide-label-end !optional;
+		}
+
+	.guide-summary {
+		@extend %guide-label !optional;
+		@extend %guide-summary !optional;
+	}
+
+	.guide-highlight {
+		@extend %guide-highlight !optional;
+	}
+
+	.guide-highlight2 {
+		@extend %guide-highlight2 !optional;
+	}

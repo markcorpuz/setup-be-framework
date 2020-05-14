@@ -1,0 +1,149 @@
+/* SETUP-BE | 1.0.0 | 200428 | setup-be/feature/urc-100/display-posts-card.scss
+// SETUP-BE | 1.0.0 | 200428 | setup-be/feature/setup-be-100/display-posts-card.scss
+---------------------------------------------------------------------------------------------------- */
+
+	.module.card {
+
+		.adweek & {
+			padding-bottom: 1.5rem;
+		}
+
+	}
+
+	// IMAGE
+
+	img {
+
+		.module.card & {
+			margin-bottom: 0.75rem;
+		}
+
+	}
+
+	// TITLE
+
+	.item.title {
+
+		.module.card & {
+			@extend %fontsize-medium !optional;
+			font-weight: 600;
+			line-height: 1.25;
+
+			a {
+				text-decoration: none;
+			}
+		}
+		.size-large .module.card & {
+			@extend %fontsize-large !optional;
+		}
+		.size-huge .module.card & {
+			@extend %fontsize-huge !optional;
+			line-height: 1.125;
+		}
+		.adweek .module.card & {
+			text-align: center;
+
+			a {
+				color: $base-color;
+			}
+			&:hover {
+				color: $highlight;
+			}
+		}
+
+	}
+
+	// CATEGORY HIGHLIGHT
+
+	.item.category {
+
+		.module.card & {
+			@extend %fontsize-smaller !optional;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			a {
+				text-decoration: none;
+			}
+		}
+		.adweek .module.card & {
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+
+	}
+
+	// AUTHOR
+
+	.item.author {
+
+		.module.card & {
+			@extend %fontsize-smaller !optional;
+			font-weight: 400;
+
+			a {
+				text-decoration: none;
+			}
+		}
+		.size-large .module.card &,
+		.size-huge .module.card & {
+			@extend %fontsize-normal !optional;
+			margin-top: 0.5rem;
+		}
+		.adweek .module.card & {
+			text-align: center;
+			margin-top: 1rem;
+		}
+
+	}
+
+	// EXCEPRT
+
+	.item.excerpt {
+
+		.module.card & {
+			@extend %fontsize-base !optional;
+			font-weight: 400;
+		}
+		.size-large .module.card &,
+		.size-huge .module.card & {
+			@extend %fontsize-small !optional;
+		}
+		.adweek .module.card & {
+			text-align: center;
+		}
+
+	}
+
+	// COVER
+	.module.card.bgimage {
+		position: relative;
+		background-color: #000;
+		background-size: cover;
+		background-position: 50%;
+		min-height: 432px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		overflow: hidden;
+
+		.items {
+			background: rgba(0, 0, 0, 0.5);
+			padding: 1.5rem;
+		}
+
+		.item.title,
+		.item.category,
+		.item.author {
+			color: white;
+
+			a {
+				color: white;
+			}
+			a:hover {
+				color: $highlight;
+			}
+		}
+	}

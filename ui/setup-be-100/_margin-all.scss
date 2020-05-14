@@ -1,0 +1,110 @@
+/* SETUP-BE | 1.0.0 | 200513 | setup-be/ui/setup-be-100/margin-all.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// SELECTORS
+
+	// TINY
+
+	.margin-tiny {
+		@extend %margin-tiny-top !optional;
+		@extend %margin-tiny-bottom !optional;
+		@extend %margin-tiny-left !optional;
+		@extend %margin-tiny-right !optional;
+	}
+	.margin-tiny-top {
+		@extend %margin-tiny-top !optional;
+	}
+	.margin-tiny-right {
+		@extend %margin-tiny-right !optional;
+	}
+	.margin-tiny-bottom {
+		@extend %margin-tiny-bottom !optional;
+	}
+	.margin-tiny-left {
+		@extend %margin-tiny-left !optional;
+	}
+
+	// SMALL
+
+	.margin-small {
+		@extend %margin-small-top !optional;
+		@extend %margin-small-bottom !optional;
+		@extend %margin-small-left !optional;
+		@extend %margin-small-right !optional;
+	}
+	.margin-small-top {
+		@extend %margin-small-top !optional;
+	}
+	.margin-small-right {
+		@extend %margin-small-right !optional;
+	}
+	.margin-small-bottom {
+		@extend %margin-small-bottom !optional;
+	}
+	.margin-small-left {
+		@extend %margin-small-left !optional;
+	}
+
+	// MEDIUM
+
+	.margin-medium {
+		@extend %margin-medium-top !optional;
+		@extend %margin-medium-bottom !optional;
+		@extend %margin-medium-left !optional;
+		@extend %margin-medium-right !optional;
+	}
+	.margin-medium-top {
+		@extend %margin-medium-top !optional;
+	}
+	.margin-medium-right {
+		@extend %margin-medium-right !optional;
+	}
+	.margin-medium-bottom {
+		@extend %margin-medium-bottom !optional;
+	}
+	.margin-medium-left {
+		@extend %margin-medium-left !optional;
+	}
+
+	// LARGE
+
+	.margin-large {
+		@extend %margin-large-top !optional;
+		@extend %margin-large-bottom !optional;
+		@extend %margin-large-left !optional;
+		@extend %margin-large-right !optional;
+	}
+	.margin-large-top {
+		@extend %margin-large-top !optional;
+	}
+	.margin-large-right {
+		@extend %margin-large-right !optional;
+	}
+	.margin-large-bottom {
+		@extend %margin-large-bottom !optional;
+	}
+	.margin-large-left {
+		@extend %margin-large-left !optional;
+	}
+
+	// HUGE
+
+	.margin-huge {
+		@extend %margin-huge-top !optional;
+		@extend %margin-huge-bottom !optional;
+		@extend %margin-huge-left !optional;
+		@extend %margin-huge-right !optional;
+	}
+	.margin-huge-top {
+		@extend %margin-huge-top !optional;
+	}
+	.margin-huge-right {
+		@extend %margin-huge-right !optional;
+	}
+	.margin-huge-bottom {
+		@extend %margin-huge-bottom !optional;
+	}
+	.margin-huge-left {
+		@extend %margin-huge-left !optional;
+	}

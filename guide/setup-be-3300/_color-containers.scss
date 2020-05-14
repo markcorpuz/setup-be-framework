@@ -1,0 +1,94 @@
+/* SETUP-BE | GUIDE | SETUP-BE-3300 | COLORCODE - 2020-03-17 */
+
+// HEADER AREA
+
+.site-header {
+	background-color: red;
+}
+
+.site-header > .wrap {
+	background-color: pink;
+}
+
+.title-area {
+	background-color: #e564d4;
+}
+
+.site-header .nav-menu {
+	background-color: #dc8089;
+}
+
+// YELLOW SHADES
+// #ffbf00;
+// #ffce3b;
+
+.site-inner {
+	background-color: #ffbf00;	// amber
+}
+
+.site-inner > .wrap {
+	background-color: #ffce3b;
+}
+
+// BLUE SHADES
+// #3b6cff
+// #9db6ff
+
+.site-footer {
+	background-color: #3b6cff;	// amber
+}
+
+.site-footer > .wrap {
+	background-color: #9db6ff;
+}
+
+// PURPLE SHADES
+// #926eff
+// #ccbbff
+
+.footer-widgets {
+	background-color: #926eff;
+}
+
+.footer-widgets > .wrap {
+	background-color: #ccbbff;
+}
+
+// GREEN SHADES
+// #c4e600
+// #00e6cf
+
+// ARTICLE (ARCHIVE)
+
+.archive .site-main > article {
+	background-color: #c4e600;
+}
+
+// CONTENT-AREA
+
+.content-area {
+	background-color: #00e6cf;
+}
+
+// SITE-MAIN
+
+.site-main {
+	background-color: #eee;
+}
+
+// SIDEBAR-PRIMARY
+
+.sidebar-primary {
+	background-color: #ddd;
+}
+
+// WIDGET
+
+.widget {
+	background-color: #eee;
+
+	.footer-widgets & {
+		background-color: #333;
+	}
+
+}

@@ -1,0 +1,85 @@
+/* SETUP-BE | TYPE | SETUP-BE-3300 | FONTSIZE - 2020-03-17 */
+
+// -------------------------------------
+// VARIABLES
+
+// -------------------------------------
+// EXTEND
+
+	// RELATIVE
+
+	%fontsize-xhuge {
+		@include font-sizes( 3.25rem, 3.625rem, 4rem );
+	}
+
+	%fontsize-huge {
+		@include font-sizes( 2.25rem, 2.625rem, 3rem );
+		//@include font-sizes( 36px, 42px, 48px );
+	}
+
+	%fontsize-large {
+		@include font-sizes( 1.5rem, 1.875rem, 2.25rem );
+		//@include font-sizes( 24px, 30px, 36px );
+	}
+
+	%fontsize-medium {
+		@include font-sizes( 1.25rem, 1.375rem, 1.5rem );
+		//@include font-sizes( 20px, 22px, 24px );
+	}
+
+	%fontsize-small {
+		@include font-sizes( 1rem, 1.25rem );
+		//@include font-sizes( 16px, 20px );
+	}
+
+	%fontsize-normal {
+		@include font-sizes( 0.875rem, 1rem );
+		//@include font-sizes( 14px, 16px );
+	}
+
+	%fontsize-smaller {
+		font-size: 0.875rem;
+		//font-size: 14px;
+	}
+
+	%fontsize-tiny {
+		font-size: 0.75rem;
+		//font-size: 12px;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// RELATIVE
+
+	.fontsize-xhuge {
+		@extend %fontsize-xhuge !optional;
+	}
+
+	.fontsize-huge {
+		@extend %fontsize-huge !optional;
+	}
+
+	.fontsize-large {
+		@extend %fontsize-large !optional;
+	}
+
+	.fontsize-medium {
+		@extend %fontsize-medium !optional;
+	}
+
+	.fontsize-small {
+		@extend %fontsize-small !optional;
+	}
+
+	.fontsize-normal {
+		@extend %fontsize-normal !optional;
+	}
+
+	.fontsize-smaller {
+		@extend %fontsize-smaller !optional;
+	}
+
+	.fontsize-tiny {
+		@extend %fontsize-tiny !optional;
+	}
