@@ -1,0 +1,85 @@
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/space.scss
+---------------------------------------------------------------------------------------------------- */
+
+//
+//
+// Currently being worked on because this is based on media
+//
+//
+
+	// Space
+	$space-zero: 0;
+	$space-px: 0.0625rem;     // 1px;
+	$space-2px: 0.125rem;     // 2px;
+	$space-tiny: 0.25rem;     // 4px;
+	$space-smaller: 0.5rem;   // 8px;
+	$space-small: 1rem;       // 16px;
+	$space-medium: 1.5rem;    // 24px;
+	$space-large: 2rem;       // 32px;
+	$space-larger: 2.5rem;    // 40px;
+	$space-huge: 3.125rem;    // 50px;
+	$space-large2x: 4rem;     // 64px;
+	$space-huge2x: 6.25rem;   // 100px;	
+
+	$space-sizes: (
+		normal: $space-normal,
+		tiny: 	$space-tiny,
+		small: 	$space-small,
+		medium:	$space-medium,
+		large:	$space-large,
+		zero: 	$space-zero
+	);
+
+	@mixin padding($top: null, $right: null, $bottom: null, $left: null, $media: null) {
+		@if $media {
+			@media #{$media} {
+				padding-top: $top;
+				padding-right: $right;
+				padding-bottom: $bottom;
+				padding-left: $left;
+			}
+		} @else {
+			padding-top: $top;
+			padding-right: $right;
+			padding-bottom: $bottom;
+			padding-left: $left;
+		}  
+	}
+
+	@mixin margin($top: null, $right: null, $bottom: null, $left: null, $media: null) {
+		@if $media {
+			@media #{$media} {
+				margin-top: $top;
+				margin-right: $right;
+				margin-bottom: $bottom;
+				margin-left: $left;
+			}
+		} @else {
+			margin-top: $top;
+			margin-right: $right;
+			margin-bottom: $bottom;
+			margin-left: $left;
+		}  
+	}
+
+	@mixin border($top: null, $right: null, $bottom: null, $left: null, $media: null) {
+		@if $media {
+			@media #{$media} {
+				border-top: $top;
+				border-right: $right;
+				border-bottom: $bottom;
+				border-left: $left;
+			}
+		} @else {
+			border-top: $top;
+			border-right: $right;
+			border-bottom: $bottom;
+			border-left: $left;
+		}  
+	}
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS

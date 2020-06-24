@@ -1,0 +1,185 @@
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/spacer.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// GUIDE
+
+	// Space
+	// $space-zero: 0;
+	// $space-px: 0.0625rem;     // 1px;
+	// $space-2px: 0.125rem;     // 2px;
+	// $space-tiny: 0.25rem;     // 4px;
+	// $space-small: 0.5rem;     // 8px;
+	// $space-normal: 1rem;      // 16px;
+	// $space-medium: 1.5rem;    // 24px;
+	// $space-large: 2rem;       // 32px;
+	// $space-larger: 2.5rem;    // 40px;
+	// $space-huge: 3.125rem;    // 50px;
+	// $space-large2x: 2rem;     // 64px;
+	// $space-huge2x: 6.25rem;   // 100px;	
+
+// -------------------------------------
+// EXTEND
+
+
+// -------------------------------------
+// SELECTORS
+
+	// SPACER
+
+	.spacer-zero {
+		@extend %margin-zero-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-zero-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+		}
+	}
+
+	// SPACER
+
+	.spacer-tiny {
+		@extend %margin-tiny-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-tiny-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-tiny-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-tiny-top !optional;
+		}
+	}
+
+	.spacer-small {
+		@extend %margin-small-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-small-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-small-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-small-top !optional;
+		}
+	}
+
+	.spacer {
+		@extend %margin-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-top !optional;
+		}
+	}
+
+	.spacer-medium {
+		@extend %margin-medium-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-medium-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-medium-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-medium-top !optional;
+		}
+	}
+
+	.spacer-large {
+		@extend %margin-large-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-large-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-large-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-large-top !optional;
+		}
+	}
+
+	.spacer-large2x {
+		@extend %margin-large2x-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-large2x-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-large2x-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-large2x-top !optional;
+		}
+	}
+
+	.spacer-larger {
+		@extend %margin-larger-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-larger-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-larger-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-larger-top !optional;
+		}
+	}
+
+	.spacer-huge {
+		@extend %margin-huge-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-huge-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-huge-bottom !optional;
+		}
+		&.spacer-in.space-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-huge-top !optional;
+		}
+	}
+
+	.spacer-huge2x {
+		@extend %margin-huge2x-bottom !optional;
+
+		&.spacer-y {
+			@extend %margin-huge2x-top !optional;
+		}
+		&.spacer-in {
+			@extend %margin-zero-bottom !optional;
+			@extend %padding-huge2x-bottom !optional;
+		}
+		&.spacer-in.spacer-y {
+			@extend %margin-zero-top !optional;
+			@extend %padding-huge2x-top !optional;
+		}
+	}
