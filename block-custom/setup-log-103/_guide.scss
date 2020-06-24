@@ -1,0 +1,253 @@
+/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/guide.scss
+---------------------------------------------------------------------------------------------------- */
+
+
+// COLOR
+
+	%guide-color-white {
+		color: $white;
+	}
+	%guide-color-darkgray {
+		color: $base-color;
+	}
+	%guide-color-gray {
+		color: brand-color( 'grey' );
+	}
+	%guide-color-lightgray {
+		color: $grey_3;
+	}
+	%guide-color-blue {
+		color: brand-color( 'blue' );
+	}
+	%guide-color-red {
+		color: brand-color( 'red' );
+	}
+	%guide-color-orange {
+		color: brand-color( 'orange' );
+	}
+	%guide-color-yellow {
+		color: brand-color( 'yellow' );
+	}
+	%guide-color-green {
+		color: brand-color( 'green' );
+	}
+	%guide-bg-darkgray {
+		background-color: $base-color;
+	}
+	%guide-bg-gray {
+		background-color: brand-color( 'grey' );
+	}
+	%guide-bg-lightgray {
+		background-color: $grey_3;
+	}
+	%guide-bg-blue {
+		background-color: brand-color( 'blue' );
+	}
+	%guide-bg-red {
+		background-color: brand-color( 'red' );
+	}
+	%guide-bg-orange {
+		background-color: brand-color( 'orange' );
+	}
+	%guide-bg-yellow {
+		background-color: brand-color( 'yellow' );
+	}
+	%guide-bg-green {
+		background-color: brand-color( 'green' );
+	}
+
+
+// MODULE.GUIDE
+.module.guide {
+	
+	// LABEL-BG-X
+	&.module-bg-darkgray,
+	&.module-bg-gray,
+	&.module-bg-lightgray,
+	&.module-bg-blue,
+	&.module-bg-red,
+	&.module-bg-orange,
+	&.module-bg-yellow,
+	&.module-bg-green {
+		border-top: 0;
+		@extend %log-color-white !optional;
+		padding: 0.5rem;
+	}
+	&.module-bg-lightgray {
+		@extend %log-color-gray !optional;
+	}
+
+	// LABEL-BG-COLOR
+	&.module-bg-darkgray {
+		//background-color: $base-color;
+		@extend %log-bg-darkgray !optional;
+	}
+	&.module-bg-gray {
+		//background-color: brand-color( 'grey' );
+		@extend %log-bg-gray !optional;
+	}
+	&.module-bg-lightgray {
+		//background-color: $grey_3;
+		@extend %log-bg-lightgray !optional;
+		@extend %log-color-gray !optional;
+	}
+	&.module-bg-blue {
+		//background-color: brand-color( 'blue' );
+		@extend %log-bg-blue !optional;
+	}
+	&.module-bg-red {
+		//background-color: brand-color( 'red' );
+		@extend %log-bg-red !optional;
+	}
+	&.module-bg-orange {
+		//background-color: brand-color( 'orange' );
+		@extend %log-bg-orange !optional;
+	}
+	&.module-bg-yellow {
+		//background-color: brand-color( 'yellow' );
+		@extend %log-bg-yellow !optional;
+	}
+	&.module-bg-green {
+		//background-color: brand-color( 'green' );
+		@extend %log-bg-green !optional;
+	}
+
+}
+
+
+// ALL ITEMS
+
+.item.label,
+.item.summary,
+.item.info {
+	@extend %fontsize-smaller !optional;
+}
+	
+// LABEL
+.item.label {
+	//color: $base-color;
+	@extend %log-color-darkgray !optional;
+	@extend %fontsize-base !optional;
+	font-weight: 600;
+
+	.module.guide & {}
+
+	.module.guide.guide-label2 & {
+		//color: brand-color( 'grey' );
+		@extend %log-color-gray !optional;
+	}
+
+	// LABEL-TAB
+	.module.guide.label-tab & {
+		display: inline-block;
+	}
+	
+	// LABEL-BG-X
+	.module.guide.label-bg-darkgray &,
+	.module.guide.label-bg-gray &,
+	.module.guide.label-bg-lightgray &,
+	.module.guide.label-bg-blue &,
+	.module.guide.label-bg-red &,
+	.module.guide.label-bg-orange &,
+	.module.guide.label-bg-yellow &,
+	.module.guide.label-bg-green & {
+		//color: $white;
+		@extend %log-color-white !optional;
+		padding: 4px 8px;
+	}
+	.module.guide.label-bg-lightgray & {
+		@extend %log-color-gray !optional;
+	}
+
+	// LABEL-BG-COLOR
+	.module.guide.label-bg-darkgray & {
+		//background-color: $base-color;
+		@extend %log-bg-darkgray !optional;
+	}
+	.module.guide.label-bg-gray & {
+		//background-color: brand-color( 'grey' );
+		@extend %log-bg-gray !optional;
+	}
+	.module.guide.label-bg-lightgray & {
+		//background-color: $grey_3;
+		@extend %log-bg-lightgray !optional;
+		@extend %log-color-gray !optional;
+	}
+	.module.guide.label-bg-blue & {
+		//background-color: brand-color( 'blue' );
+		@extend %log-bg-blue !optional;
+	}
+	.module.guide.label-bg-red & {
+		//background-color: brand-color( 'red' );
+		@extend %log-bg-red !optional;
+	}
+	.module.guide.label-bg-orange & {
+		//background-color: brand-color( 'orange' );
+		@extend %log-bg-orange !optional;
+	}
+	.module.guide.label-bg-yellow & {
+		//background-color: brand-color( 'yellow' );
+		@extend %log-bg-yellow !optional;
+	}
+	.module.guide.label-bg-green & {
+		//background-color: brand-color( 'green' );
+		@extend %log-bg-green !optional;
+	}
+
+}
+
+// SUMMARY
+.item.summary {
+	.module.guide & {
+		margin-top: 4px;
+	}
+
+	// LABEL-BG-X
+	.module.guide.summary-bg-darkgray &,
+	.module.guide.summary-bg-gray &,
+	.module.guide.summary-bg-lightgray &,
+	.module.guide.summary-bg-blue &,
+	.module.guide.summary-bg-red &,
+	.module.guide.summary-bg-orange &,
+	.module.guide.summary-bg-yellow &,
+	.module.guide.summary-bg-green & {
+		//color: $white;
+		@extend %log-color-white !optional;
+		margin-top: 0;
+		padding: 4px 8px;
+	}
+	.module.guide.summary-bg-lightgray & {
+		@extend %log-color-darkgray !optional;
+	}
+
+	// SUMMARY-BG-COLOR
+	.module.guide.summary-bg-darkgray & {
+		//background-color: $base-color;
+		@extend %log-bg-darkgray !optional;
+	}
+	.module.guide.summary-bg-gray & {
+		//background-color: brand-color( 'grey' );
+		@extend %log-bg-gray !optional;
+	}
+	.module.guide.summary-bg-lightgray & {
+		//background-color: $grey_3;
+		@extend %log-bg-lightgray !optional;
+		@extend %log-color-darkgray !optional;
+	}
+	.module.guide.summary-bg-blue & {
+		//background-color: brand-color( 'blue' );
+		@extend %log-bg-blue !optional;
+	}
+	.module.guide.summary-bg-red & {
+		//background-color: brand-color( 'red' );
+		@extend %log-bg-red !optional;
+	}
+	.module.guide.summary-bg-orange & {
+		//background-color: brand-color( 'orange' );
+		@extend %log-bg-orange !optional;
+	}
+	.module.guide.summary-bg-yellow & {
+		//background-color: brand-color( 'yellow' );
+		@extend %log-bg-yellow !optional;
+	}
+}

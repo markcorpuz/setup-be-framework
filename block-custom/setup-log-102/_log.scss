@@ -1,0 +1,163 @@
+/* SETUP-LOG | 1.0.2 | 200606 | setup-be/block-custom/setup-log-101/log.scss
+---------------------------------------------------------------------------------------------------- */
+
+/*
+	.log.module {
+
+	}
+	.log.module.groupboth {
+		//border-top: 1px solid red;
+	}
+	.log.module.groupspec {
+		//border-top: 1px solid green;
+	}
+	.log.module.groupinfo {
+		grid-template-columns: 1fr;
+		//border-top: 1px solid blue;
+	}
+
+	// TEXT-VARIATIONS
+	.log.module.text-medium {
+		@extend %fontsize-medium !optional;
+	}
+
+	%log-highlight-default {
+		color: white;
+		grid-template-columns: 165px 1fr;
+		padding-left: 5px;
+		padding-right: 5px;
+		//padding: 2px 10px;
+		border-top: none;
+	}
+
+	// HIGHLIGHTS
+	.log.module.highlight-red {
+		@extend %log-highlight-default !optional;
+		background-color: #e5565d;
+	}
+
+	.log.module.highlight-blue {
+		@extend %log-highlight-default !optional;
+		background-color: #56a5e5;
+	}
+
+	.log.module.highlight-green {
+		@extend %log-highlight-default !optional;
+		background-color: #56e597;
+	}
+*/
+
+// ALL ITEMS
+
+.item.date,
+.item.time,
+.item.datetime,
+.item.label,
+.item.detail,
+.item.title,
+.item.summary,
+.item.info,
+.item.link {
+	@extend %fontsize-smaller !optional;
+}
+	
+// DATE
+.item.date {
+	//grid-area: log-date;
+	.module.log & {}
+}
+
+// TIME
+.item.time {
+	//grid-area: log-time;
+	.module.log & {}
+}
+
+// DATETIME
+.item.datetime {
+	//grid-area: log-datetime;
+	.module.log & {}
+}
+
+// LABEL
+.item.label {
+	//grid-area: log-label;
+	.module.log & {}
+}
+
+// TITLE
+.item.title {
+	//grid-area: log-title;
+	.module.log & {}
+}
+
+// DETAIL
+.item.detail {
+	//grid-area: log-detail;
+	.module.log & {}
+}
+
+// INFO
+.item.info {
+	//grid-area: log-info;
+	.module.log & {}
+}
+
+// INFO
+.item.link {
+	//grid-area: log-link;
+	.module.log & {}
+}
+
+// MODULE
+
+.module.log {
+	margin-bottom: 0.5rem;
+	padding-top: 2px;
+	border-top: 1px solid #eee;
+	
+	.items.main {}
+	.items.side {}
+}
+
+
+// MODULE.LOG.MAIN-SIDE
+.module.log.main-side {
+	display: grid;
+	grid-template-areas: "log-main log-side";
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1.5rem;
+	margin-bottom: 0.5rem;
+	padding-top: 2px;
+	border-top: 1px solid #eee;
+
+	.items.main {
+		background-color: yellow;
+		grid-area: log-main;
+	}
+	.items.side {
+		background-color: red;
+		grid-area: log-side;
+	}
+}
+
+
+// MODULE.LOG.MAIN-SIDE
+.module.log.side-main {
+	display: grid;
+	grid-template-areas: "log-side log-main";
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 1.5rem;
+	margin-bottom: 0.5rem;
+	padding-top: 2px;
+	border-top: 1px solid #eee;
+
+	.items.main {
+		background-color: yellow;
+		grid-area: log-main;
+	}
+	.items.side {
+		background-color: red;
+		grid-area: log-side;
+	}
+}

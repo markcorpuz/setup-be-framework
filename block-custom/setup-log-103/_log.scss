@@ -1,0 +1,197 @@
+/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/log.scss
+---------------------------------------------------------------------------------------------------- */
+
+// COLOR
+
+	%log-color-white {
+		color: $white;
+	}
+	%log-color-darkgray {
+		color: $base-color;
+	}
+	%log-color-gray {
+		color: brand-color( 'grey' );
+	}
+	%log-color-lightgray {
+		color: $grey_3;
+	}
+	%log-color-blue {
+		color: brand-color( 'blue' );
+	}
+	%log-color-red {
+		color: brand-color( 'red' );
+	}
+	%log-color-orange {
+		color: brand-color( 'orange' );
+	}
+	%log-color-yellow {
+		color: brand-color( 'yellow' );
+	}
+	%log-color-green {
+		color: brand-color( 'green' );
+	}
+	%log-bg-darkgray {
+		background-color: $base-color;
+	}
+	%log-bg-gray {
+		background-color: brand-color( 'grey' );
+	}
+	%log-bg-lightgray {
+		background-color: $grey_3;
+	}
+	%log-bg-blue {
+		background-color: brand-color( 'blue' );
+	}
+	%log-bg-red {
+		background-color: brand-color( 'red' );
+	}
+	%log-bg-orange {
+		background-color: brand-color( 'orange' );
+	}
+	%log-bg-yellow {
+		background-color: brand-color( 'yellow' );
+	}
+	%log-bg-green {
+		background-color: brand-color( 'green' );
+	}
+
+
+// DATE & TIME
+.item.date,
+.item.time,
+.item.datetime {
+	@extend %log-color-gray !optional;
+	@extend %fontsize-smaller !optional;	
+	font-weight: 500;
+
+	.module.log.module-bg-darkgray &,
+	.module.log.module-bg-gray &,
+	.module.log.module-bg-lightgray &,
+	.module.log.module-bg-blue &,
+	.module.log.module-bg-red &,
+	.module.log.module-bg-orange &,
+	.module.log.module-bg-yellow &,
+	.module.log.module-bg-green & {
+		@extend %log-color-white !optional;
+		font-weight: 600;
+	}
+}
+
+
+// LABEL, SUMMARY & INFO
+.item.label,
+.item.summary,
+.item.info {
+	@extend %log-color-darkgray !optional;
+	@extend %fontsize-base !optional;
+
+	.module.log.module-bg-darkgray &,
+	.module.log.module-bg-gray &,
+	.module.log.module-bg-lightgray &,
+	.module.log.module-bg-blue &,
+	.module.log.module-bg-red &,
+	.module.log.module-bg-orange &,
+	.module.log.module-bg-yellow &,
+	.module.log.module-bg-green & {
+		@extend %log-color-white !optional;
+	}
+}
+
+	
+// MODULE.LOG
+.module.log {
+
+	border-top: 1px solid #ddd;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 4px;
+
+	&.module-no-border {
+		border-top: 0;
+	}
+	
+	// LABEL-BG-X
+	&.module-bg-darkgray,
+	&.module-bg-gray,
+	&.module-bg-lightgray,
+	&.module-bg-blue,
+	&.module-bg-red,
+	&.module-bg-orange,
+	&.module-bg-yellow,
+	&.module-bg-green {
+		border-top: 0;
+		@extend %log-color-white !optional;
+		padding: 0.5rem;
+	}
+	&.module-bg-lightgray {
+		@extend %log-color-gray !optional;
+	}
+
+	// LABEL-BG-COLOR
+	&.module-bg-darkgray {
+		//background-color: $base-color;
+		@extend %log-bg-darkgray !optional;
+	}
+	&.module-bg-gray {
+		//background-color: brand-color( 'grey' );
+		@extend %log-bg-gray !optional;
+	}
+	&.module-bg-lightgray {
+		//background-color: $grey_3;
+		@extend %log-bg-lightgray !optional;
+		@extend %log-color-gray !optional;
+	}
+	&.module-bg-blue {
+		//background-color: brand-color( 'blue' );
+		@extend %log-bg-blue !optional;
+	}
+	&.module-bg-red {
+		//background-color: brand-color( 'red' );
+		@extend %log-bg-red !optional;
+	}
+	&.module-bg-orange {
+		//background-color: brand-color( 'orange' );
+		@extend %log-bg-orange !optional;
+	}
+	&.module-bg-yellow {
+		//background-color: brand-color( 'yellow' );
+		@extend %log-bg-yellow !optional;
+	}
+	&.module-bg-green {
+		//background-color: brand-color( 'green' );
+		@extend %log-bg-green !optional;
+	}
+
+}
+
+
+// MODULE.LOG.MAIN-SIDE
+.module.log.main-side {
+	display: grid;
+	grid-template-areas: "log-main log-side";
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 1rem;
+
+	.items.main {
+		grid-area: log-main;
+	}
+	.items.side {
+		grid-area: log-side;
+	}
+}
+
+
+// MODULE.LOG.MAIN-SIDE
+.module.log.side-main {
+	display: grid;
+	grid-template-areas: "log-side log-main";
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1rem;
+
+	.items.main {
+		grid-area: log-main;
+	}
+	.items.side {
+		grid-area: log-side;
+	}
+}
