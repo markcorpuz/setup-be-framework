@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.0 | 200501 | setup-be/block/setup-be-100/cover.scss
+/* SETUP-BE | 1.0.0 | 200623 | setup-be/block/setup-be-100/cover.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // -------------------------------------
@@ -46,6 +46,10 @@
 				@extend %margin-zero-top !optional;
 				@extend %margin-zero-bottom !optional;
 			}
+		}
+
+		&.minheight-zero {
+			min-height: unset;
 		}
 
 	}
