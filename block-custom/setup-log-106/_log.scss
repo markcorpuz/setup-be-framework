@@ -1,0 +1,35 @@
+/* SETUP-LOG | 1.0.6 | 200917 | setup-be/block-custom/setup-log-106/log.scss
+---------------------------------------------------------------------------------------------------- */
+
+// MODULE LOG
+.module.log {}
+
+// MODULE ITEMS
+.item.date,
+.item.time,
+.item.code,
+.item.label,
+.item.title,
+.item.summary,
+.item.info,
+.item.user {
+
+	.module.log & {}
+
+}
+
+// LOG-BOX
+.module.log.log-box {
+	padding: 1rem;
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 	3px 3px 8px 0px rgba(0,0,0,0.15);
+	box-shadow: 		3px 3px 8px 0px rgba(0,0,0,0.15);
+}
+
+// LOG-PREFIX
+.module.log.log-prefix {
+	padding-top: 1rem;
+	-webkit-box-shadow: 0 -8px 6px -6px rgba(0,0,0,0.25);
+	-moz-box-shadow: 	0 -8px 6px -6px rgba(0,0,0,0.25);
+	box-shadow: 		0 -8px 6px -6px rgba(0,0,0,0.25);
+}

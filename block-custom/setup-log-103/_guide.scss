@@ -1,4 +1,4 @@
-/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/guide.scss
+/* SETUP-LOG | 1.0.3 | 200702 | setup-be/block-custom/setup-log-103/guide.scss
 ---------------------------------------------------------------------------------------------------- */
 
 
@@ -140,6 +140,7 @@
 	// LABEL-TAB
 	.module.guide.label-tab & {
 		display: inline-block;
+		//@extend %display-inlineblock !optional;
 	}
 	
 	// LABEL-BG-X
@@ -249,5 +250,26 @@
 	.module.guide.summary-bg-yellow & {
 		//background-color: brand-color( 'yellow' );
 		@extend %log-bg-yellow !optional;
+	}
+}
+
+
+// GUIDE TITLESHADOW
+// Basically a top level title label with a shadow above and spacing below
+
+.module.guide.guide-titleshadow {
+	@extend %shadow-edge-top !optional;
+	@extend %margin-large2x-top !optional;
+	@extend %margin-medium-bottom !optional;
+
+	& > .item.label {
+		@extend %log-bg-darkgray !optional;		
+		@extend %log-inlineblock !optional;
+		@extend %log-color-white !optional;
+		padding: 4px 8px;
+	}
+
+	&.margin-large-top {
+		@extend %margin-large-top !optional;
 	}
 }

@@ -1,4 +1,4 @@
-/* SETUP-LOG | 1.0.3 | 200610 | setup-be/block-custom/setup-log-103/log.scss
+/* SETUP-LOG | 1.0.3 | 200702 | setup-be/block-custom/setup-log-103/log.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // COLOR
@@ -53,6 +53,15 @@
 	}
 	%log-bg-green {
 		background-color: brand-color( 'green' );
+	}
+
+// DISPLAY
+
+	%log-inlineblock {
+		display: inline-block;
+	}
+	%log-displayblock {
+		display: block;
 	}
 
 
