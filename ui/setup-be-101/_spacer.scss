@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/spacer.scss
+/* SETUP-BE | 1.0.1 | 200703 | setup-be/ui/setup-be-101/spacer.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // -------------------------------------
@@ -50,10 +50,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-tiny-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-tiny-top !optional;
-		}
+	}
+	.spacer-tiny.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-tiny-top !optional;
 	}
 
 	.spacer-small {
@@ -66,10 +66,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-small-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-small-top !optional;
-		}
+	}
+	.spacer-small.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-small-top !optional;
 	}
 
 	.spacer {
@@ -82,10 +82,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-top !optional;
-		}
+	}
+	.spacer.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-top !optional;
 	}
 
 	.spacer-medium {
@@ -98,10 +98,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-medium-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-medium-top !optional;
-		}
+	}
+	.spacer-medium.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-medium-top !optional;
 	}
 
 	.spacer-large {
@@ -114,10 +114,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-large-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-large-top !optional;
-		}
+	}
+	.spacer-large.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-large-top !optional;
 	}
 
 	.spacer-large2x {
@@ -130,10 +130,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-large2x-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-large2x-top !optional;
-		}
+	}
+	.spacer-large2x.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-large2x-top !optional;
 	}
 
 	.spacer-larger {
@@ -146,10 +146,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-larger-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-larger-top !optional;
-		}
+	}
+	.spacer-larger.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-larger-top !optional;
 	}
 
 	.spacer-huge {
@@ -162,10 +162,10 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-huge-bottom !optional;
 		}
-		&.spacer-in.space-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-huge-top !optional;
-		}
+	}
+	.spacer-huge.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-huge-top !optional;
 	}
 
 	.spacer-huge2x {
@@ -178,8 +178,29 @@
 			@extend %margin-zero-bottom !optional;
 			@extend %padding-huge2x-bottom !optional;
 		}
-		&.spacer-in.spacer-y {
-			@extend %margin-zero-top !optional;
-			@extend %padding-huge2x-top !optional;
-		}
+	}
+	.spacer-huge2x.spacer-in.spacer-y {
+		@extend %margin-zero-top !optional;
+		@extend %padding-huge2x-top !optional;
+	}
+
+	// SPACER STANDARD
+	
+	.spacer-top {
+		@extend %margin-large2x-top !optional;
+	}
+	.spacer2-top {
+		@extend %margin-larger-top !optional;
+	}
+	.spacer3-top {
+		@extend %margin-medium !optional;
+	}
+	.spacer {
+		@extend %margin-large2x-bottom !optional;
+	}
+	.spacer2 {
+		@extend %margin-larger-bottom !optional;
+	}
+	.spacer3 {
+		@extend %margin-medium-bottom !optional;
 	}
